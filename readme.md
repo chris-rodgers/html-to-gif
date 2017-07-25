@@ -6,14 +6,15 @@ HTML to animated gif generator for NodeJS using PhantomJS and Gifencoder.
 Returns a stream of GIF data.
 
 ## Options
-| Value      | Type   | Description                                    |
-|------------|--------|------------------------------------------------|
-| dimensions | Object | dimensions: {width: 800, height: 650}          |
-| url        | String | Target URL                                     |
-| duration   | Int    | Duration in ms                                 |
-| repeat     | Bool   | Animation repeats when finished - true / false |
-| delay      | Int    | Time between each frame in ms                  |
-| quality    | Number | Image quality 1-10                             |
+| Value             | Type   | Description                                                      |
+|-------------------|--------|------------------------------------------------------------------|
+| phantomExecutable | String | Location of phantomjs. Defaults to ./node_modules/.bin/phantomjs |
+| dimensions        | Object | dimensions: {width: 800, height: 650}                            |
+| url               | String | Target URL                                                       |
+| duration          | Int    | Duration in ms                                                   |
+| repeat            | Bool   | Animation repeats when finished - true / false                   |
+| delay             | Int    | Time between each frame in ms                                    |
+| quality           | Number | Image quality 1-10                                               |
 
 ## Example
 ```
