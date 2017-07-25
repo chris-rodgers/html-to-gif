@@ -1,6 +1,6 @@
 {
   "name": "html-to-gif",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "HTML to animated gif generator for NodeJS using PhantomJS and Gifencoder.",
   "main": "index.js",
   "author": "Chris Rodgers",
