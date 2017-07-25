@@ -30,7 +30,7 @@ module.exports = function(o, cb) {
 		duration: o.duration,
 		delay: o.delay
 	}
-	var args = ["./scripts/phantom-script.js", Buffer.from(JSON.stringify(phantomOptions)).toString('base64')];
+	var args = [__dirname+'/scripts/phantom-script.js', Buffer.from(JSON.stringify(phantomOptions)).toString('base64')];
 
 	// Init the Gif
 	var encoder = new GIFEncoder(o.dimensions.width, o.dimensions.height);
